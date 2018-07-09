@@ -1,26 +1,31 @@
-def add (a, b)
-     (a + b);
+# coding: utf-8
+#write your code here
+
+def add(a,b)
+  return (a + b);
 end
 
-def subtract (a, b)
-  (a - b);
+def     subtract(a,b)
+  return (a - b);
 end
 
-def sum(nbre = [])
-   nbre.reduce(0,:+)
+def  sum(nbre = [])
+  nbre.reduce(0,:+)
 end
 
-def multiply (a, b)
-    a * b
-
+def power(a,b)
+  return (a **b)
 end
 
-def power (a, b)
-  a ** b
+def factorial(n)
+  if n<= 1
+    1
+  else
+    n * factorial( n - 1 )
+  end
 end
 
-
-def factorial (n)
-
-(1..n).inject(:*) || 1
+def  multiply(a,b)
+  num = a * b
+  return num
 end
