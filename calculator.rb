@@ -18,3 +18,9 @@ end
 def power (a, b)
   a ** b
 end
+
+
+def factorial (n)
+
+(1..n).inject(:*) || 1
+end
